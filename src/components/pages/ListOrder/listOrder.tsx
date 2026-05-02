@@ -29,7 +29,7 @@ const ListOrder = () => {
 
   const handleCompleteOrder = async (id: string) => {
     await updateOrder(id, { status: "COMPLETED" }).then(() => {
-      setRefetchOrder(true);
+      setRefetchOrder(true); // ini true agar dia ngereload data baru setelah di update
     });
   };
 

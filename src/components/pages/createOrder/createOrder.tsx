@@ -152,7 +152,7 @@ const CreateOrder = () => {
             <h2 className={styles.title}>Current Order</h2>
           </div>
           {carts.length > 0 ? (
-            <div className={styles.item}>
+            <div className={styles.cart}>
               {carts.map((item: ICard) => (
                 <div className={styles.item} key={item.menuItemId}>
                   <h4 className={styles.name}>{item.name}</h4>

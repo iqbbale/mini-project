@@ -6,6 +6,7 @@ import ListOrder from "../components/pages/ListOrder";
 import DetailOrder from "../components/pages/detailOrder";
 import CreateOrder from "../components/pages/createOrder";
 
+// RouteObject type array yang menyimpan object
 const routers: RouteObject[] = [
   {
     path: "/",

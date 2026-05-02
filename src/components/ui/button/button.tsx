@@ -13,10 +13,10 @@ interface PropTypes {
 const Button = (props: PropTypes) => {
   const { type = "button", children, color = "primary", className } = props;
   return (
-    <button
+    <button //dibagian style[`button-${color}`] itu agar stylenya dinamis nantinya
       className={`${style.button} ${style[`button-${color}`]} ${className}`}
       type={type}
-      {...props} //buat props lagi kali aja besok ada props lainnya dan bisa langsung masuk ini hanya untuk jaga2
+      {...props} //buat props lagi kali aja besok ada props lainnya dan bisa langsung masuk kedalam code button-nya tampa ada di bagian interface ini hanya untuk jaga2
     >
       {children}
     </button>
